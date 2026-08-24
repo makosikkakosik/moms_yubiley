@@ -1,16 +1,66 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Приглашение на юбилей Юлии 29 августа в банкетном зале Argyn, Астана." />
-    <meta property="og:title" content="Юлии 50 — приглашение на юбилей" />
-    <meta property="og:description" content="29 августа в 16:00 · Банкетный зал Argyn · Астана" />
-    <meta property="og:type" content="website" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Приглашение на юбилей Юлии 29 августа в банкетном зале Argyn, Астана.">
+    <meta property="og:title" content="Юлии 50 — приглашение на юбилей">
+    <meta property="og:description" content="29 августа в 16:00 · Банкетный зал Argyn · Астана">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
     <title>Юлии 50 — приглашение на юбилей</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <main>
+      <section class="hero" id="top">
+        <div class="corner corner-left" aria-hidden="true"></div>
+        <div class="corner corner-right" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <p class="eyebrow">Приглашение на юбилей</p>
+          <div class="monogram" aria-hidden="true">Ю</div>
+          <h1>Юлия — <span>50</span></h1>
+          <p class="lead">Дорогие родные и друзья!</p>
+          <p class="intro">Приглашаю вас разделить со мной радость этого особенного дня и провести тёплый вечер в кругу близких людей.</p>
+          <a class="button button-primary" href="#details">Узнать подробности</a>
+        </div>
+        <div class="scroll-hint" aria-hidden="true"><span></span>листайте вниз</div>
+      </section>
+
+      <section class="details" id="details">
+        <div class="section-heading">
+          <p class="eyebrow">Сохраните дату</p>
+          <h2>Буду рада видеть вас</h2>
+          <div class="divider"><span>✦</span></div>
+        </div>
+        <div class="date-card">
+          <div class="date-month">Август</div>
+          <div class="date-grid">
+            <div><span class="detail-label">Суббота</span><strong>29</strong></div>
+            <div class="year"><span>2026</span><span class="line"></span></div>
+            <div><span class="detail-label">Начало</span><strong>16:00</strong></div>
+          </div>
+        </div>
+        <div class="place">
+          <p class="eyebrow">Место встречи</p>
+          <h2>Банкетный зал «Argyn»</h2>
+          <p class="address">Астана · проспект Магжана Жумабаева, 20</p>
+          <a class="button button-dark" href="https://2gis.kz/astana/geo/70000001100730165" target="_blank" rel="noreferrer">Построить маршрут <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="map-section" aria-label="Карта места проведения">
+        <div class="map-frame">
+          <iframe title="Банкетный зал Argyn на карте" src="https://www.openstreetmap.org/export/embed.html?bbox=71.477%2C51.142%2C71.492%2C51.152&amp;layer=mapnik&amp;marker=51.147163%2C71.484732" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-badge"><span>29</span><small>августа</small></div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-mark">Ю</div>
+        <p>До встречи на моём юбилее!</p>
+        <h2>С любовью, Юлия</h2>
+        <a href="#top" aria-label="Вернуться к началу">↑</a>
+      </footer>
+    </main>
   </body>
 </html>
