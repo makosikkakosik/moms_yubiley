@@ -3,6 +3,3 @@
 npm-debug.log*
 .env*
 /dist/
-/.wrangler/
-/.next/
-/.vinext/

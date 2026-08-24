@@ -15,7 +15,6 @@
     "react-dom": "19.2.6"
   },
   "devDependencies": {
-    "@openai/sites-vite-plugin": "0.1.0",
     "@tailwindcss/postcss": "4.2.1",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
