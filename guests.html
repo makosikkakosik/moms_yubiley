@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="guests.css?v=1">
+    <title>Список гостей — юбилей Юлии</title>
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="admin-card" id="login-view">
+        <p class="eyebrow">Юлия · 25+25</p>
+        <h1>Список гостей</h1>
+        <p class="subtitle">Эта страница доступна только организатору.</p>
+        <form class="login-form" id="login-form">
+          <label for="admin-email">Электронная почта</label>
+          <input id="admin-email" type="email" autocomplete="username" required>
+          <label for="admin-password">Пароль</label>
+          <input id="admin-password" type="password" autocomplete="current-password" required>
+          <button type="submit">Войти</button>
+        </form>
+        <p class="status" id="login-status" aria-live="polite"></p>
+      </section>
+
+      <section class="admin-card dashboard" id="dashboard-view" hidden>
+        <div class="dashboard-header">
+          <div>
+            <p class="eyebrow">Подтверждения</p>
+            <h1>Гости <span id="guest-count">0</span></h1>
+          </div>
+          <button class="logout-button" id="logout-button" type="button">Выйти</button>
+        </div>
+        <p class="status" id="list-status" aria-live="polite">Загружаем список…</p>
+        <ol class="guest-list" id="guest-list"></ol>
+        <a class="invitation-link" href="index.html">← Открыть приглашение</a>
+      </section>
+    </main>
+    <script type="module" src="guests.js?v=1"></script>
+  </body>
+</html>

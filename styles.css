@@ -52,9 +52,15 @@ footer { min-height:520px; padding:80px 24px 70px; text-align:center; background
 .footer-mark { width:62px; height:62px; border:1px solid #c7ab78; border-radius:50%; display:grid; place-items:center; margin:auto; font-size:31px; font-style:italic; }
 footer p { margin:35px 0 10px; font:13px Arial,sans-serif; text-transform:uppercase; letter-spacing:.22em; color:#d8c8af; }
 footer h2 { margin:0; font-weight:400; font-size:clamp(40px,5vw,64px); }
-.rsvp-button { appearance:none; -webkit-appearance:none; display:inline-flex; align-items:center; justify-content:center; margin-top:40px; padding:20px 32px; border:2px solid #d8bf91; border-radius:999px; background:linear-gradient(135deg,#fff8ea,#efd39e); color:var(--wine); cursor:pointer; font:700 14px/1.3 Arial,sans-serif; letter-spacing:.12em; text-align:center; text-transform:uppercase; box-shadow:0 12px 30px rgb(27 6 11 / 34%),inset 0 1px 0 rgb(255 255 255 / 75%); transition:transform .2s,box-shadow .2s,background .2s; }
+.rsvp-form { width:min(100%,480px); margin:38px auto 0; display:grid; gap:13px; }
+.rsvp-form label { font:600 12px/1.2 Arial,sans-serif; letter-spacing:.2em; text-transform:uppercase; color:#e8d8bc; }
+.rsvp-form input { width:100%; padding:17px 21px; border:1px solid rgb(232 216 188 / 70%); border-radius:999px; background:rgb(255 255 255 / 10%); color:#fffaf0; font:italic 24px/1.2 "Snell Roundhand","Segoe Script","Brush Script MT",cursive; text-align:center; outline:none; transition:border-color .2s,background .2s,box-shadow .2s; }
+.rsvp-form input::placeholder { color:rgb(255 241 213 / 58%); }
+.rsvp-form input:focus { border-color:#f5d89e; background:rgb(255 255 255 / 14%); box-shadow:0 0 0 4px rgb(245 216 158 / 13%); }
+.rsvp-button { appearance:none; -webkit-appearance:none; display:inline-flex; align-items:center; justify-content:center; margin-top:5px; padding:20px 32px; border:2px solid #d8bf91; border-radius:999px; background:linear-gradient(135deg,#fff8ea,#efd39e); color:var(--wine); cursor:pointer; font:700 14px/1.3 Arial,sans-serif; letter-spacing:.12em; text-align:center; text-transform:uppercase; box-shadow:0 12px 30px rgb(27 6 11 / 34%),inset 0 1px 0 rgb(255 255 255 / 75%); transition:transform .2s,box-shadow .2s,background .2s,opacity .2s; }
 .rsvp-button:hover { transform:translateY(-4px) scale(1.02); box-shadow:0 17px 38px rgb(27 6 11 / 42%),inset 0 1px 0 rgb(255 255 255 / 75%); }
 .rsvp-button:focus-visible { outline:3px solid #f7d99f; outline-offset:4px; }
+.rsvp-button:disabled { cursor:wait; opacity:.82; }
 .rsvp-button.confirmed { animation:button-pop .65s ease; background:linear-gradient(135deg,#ffeabf,#f5c870); }
 .rsvp-message { min-height:20px; margin:18px 0 0; font-family:"Snell Roundhand","Segoe Script","Brush Script MT",cursive; font-size:27px; font-style:italic; letter-spacing:0; text-transform:none; color:#fff1d5; }
 .back-to-top { position:absolute; bottom:25px; left:50%; transform:translateX(-50%); text-decoration:none; font-size:24px; color:#d8c8af; }

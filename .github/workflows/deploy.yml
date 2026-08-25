@@ -30,7 +30,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir _site
-          cp index.html styles.css script.js julia.jpeg _site/
+          cp index.html styles.css script.js firebase-config.js julia.jpeg guests.html guests.css guests.js _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
