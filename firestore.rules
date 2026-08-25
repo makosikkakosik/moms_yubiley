@@ -11,7 +11,7 @@ service cloud.firestore {
 
       // Замените YOUR_ADMIN_UID на UID пользователя, созданного в Firebase Authentication.
       allow read: if request.auth != null
-                  && request.auth.uid == 'YOUR_ADMIN_UID';
+                  && request.auth.uid == 'b4OxNiu9GWfgKfU3uDCykmPmYwY2';
 
       allow update, delete: if false;
     }
