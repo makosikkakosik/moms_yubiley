@@ -13,7 +13,7 @@ h1 span { display:inline-grid; place-items:center; min-width:46px; height:46px; 
 .login-form input:focus { border-color:var(--wine); box-shadow:0 0 0 3px rgb(111 38 52 / 10%); }
 .login-form button,.logout-button { border:0; background:var(--wine); color:white; cursor:pointer; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
 .login-form button { margin-top:14px; padding:17px; }
-.login-form button:disabled { cursor:wait; opacity:.65; }
+.login-form button:disabled { cursor:not-allowed; opacity:.65; }
 .status { min-height:22px; margin:18px 0 0; color:#8d3545; line-height:1.5; }
 .dashboard { width:min(100%,760px); }
 .dashboard-header { display:flex; align-items:flex-start; justify-content:space-between; gap:20px; padding-bottom:25px; border-bottom:1px solid #e0d4bf; }
