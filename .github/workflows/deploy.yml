@@ -30,7 +30,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir _site
-          cp index.html styles.css _site/
+          cp index.html styles.css julia.jpeg _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
